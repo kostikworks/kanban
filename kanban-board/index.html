@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kanban Board</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <header class="project__header">
+                <input type="text" class="project__title" placeholder="Project Name">
+            </header>
+
+            <!-- Columns -->
+            <section class="project__columns">
+                <!-- TO-DO column -->
+                <div class="project__column to-do">
+                    <h2 class="column-title">TO-DO</h2>
+                    <div class="column-item" draggable="true">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="item-priority low">low priority</div>
+                        <div class="item-title">Create new HTML/CSS page</div>
+                        <div class="item-date">
+                            <span class="date-icon"><i class="fa-regular fa-calendar"></i></span>
+                            <p class="date">Jan 29th, 2026</p>
+                        </div>
+                    </div>
+                    <div class="add-task">
+                        <input type="text" class="task-input" placeholder="Add a task...">
+                        <button class="add-task-btn">Add Task</button>
+                    </div>
+                </div>
+                <!-- IN PROGRESS column -->
+                <div class="project__column in-progress">
+                    <h2 class="column-title">IN PROGRESS</h2>
+                    <div class="column-item" draggable="true">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="item-priority high">high priority</div>
+                        <div class="item-title">Implement basic Kanban Board</div>
+                        <div class="item-date">
+                            <span class="date-icon"><i class="fa-regular fa-calendar"></i></span>
+                            <p class="date">Jan 29th, 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- COMPLETED column -->
+                <div class="project__column completed">
+                    <h2 class="column-title">COMPLETED</h2>
+                    <div class="column-item" draggable="true">
+                        <i class="fa-solid fa-xmark"></i>
+                        <div class="item-priority medium">medium priority</div>
+                        <div class="item-title">Add normalize.css</div>
+                        <div class="item-date">
+                            <span class="date-icon"><i class="fa-regular fa-calendar"></i></span>
+                            <p class="date">Nov 12th, 2029</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="/main.js"></script>
+</body>
+</html>
